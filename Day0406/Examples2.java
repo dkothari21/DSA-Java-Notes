@@ -1,4 +1,4 @@
-package Day02;
+package Day0406;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -58,11 +58,36 @@ public class Examples2 {
         // Practice Problem 3: Reverse a string using StringBuilder or StringBuffer.
 
         // Tips and Tricks for DSA Problem Solving
-        // 1. Use StringBuilder for mutable strings to save memory and improve
-        // performance.
+        // 1. Use StringBuilder for mutable strings to save memory and improve performance.
+        //    - Avoid using String concatenation in loops; use StringBuilder instead for better efficiency.
         // 2. Use .equals() for string comparison instead of ==.
+        //    - Always use .equalsIgnoreCase() for case-insensitive comparisons.
         // 3. Use substring and indexOf to parse strings efficiently.
+        //    - Validate indices to avoid StringIndexOutOfBoundsException.
         // 4. Convert strings to char arrays for character-level manipulations.
+        //    - Use toCharArray() for easy iteration and modification of characters.
+
+        // Tips and Tricks for DSA:
+        // 1. Always analyze the time and space complexity of your solution.
+        //    - Use Big-O notation to estimate the efficiency of your algorithm.
+        // 2. Use HashMaps or HashSets for quick lookups in problems involving duplicates or frequency counts.
+        //    - Ensure proper handling of null keys and values in HashMaps.
+        // 3. Practice sliding window and two-pointer techniques for array and string problems.
+        //    - Use a dynamic window size for problems involving variable-length subarrays.
+        // 4. Divide and conquer is a powerful approach for sorting and searching problems.
+        //    - Break the problem into smaller sub-problems and combine their solutions.
+        // 5. Use dynamic programming for problems with overlapping subproblems and optimal substructure.
+        //    - Use a memoization table to store intermediate results and avoid recomputation.
+        // 6. Always dry-run your code with edge cases to ensure correctness.
+        //    - Test with empty inputs, single elements, and maximum constraints.
+        // 7. Use recursion with memoization to optimize solutions for problems with repeated calculations.
+        //    - Avoid stack overflow by limiting recursion depth or using iterative solutions.
+        // 8. Break down complex problems into smaller sub-problems and solve them step by step.
+        //    - Use helper functions to modularize and simplify your code.
+        // 9. Use binary search for problems involving sorted arrays or monotonic functions.
+        //    - Ensure the array is sorted and handle edge cases like duplicates.
+        // 10. Practice writing clean and modular code to make debugging easier.
+        //     - Use meaningful variable names and add comments to explain logic.
 
         // Additional Examples for Patterns in DSA
 
@@ -123,7 +148,7 @@ public class Examples2 {
         // Additional Practice Problems with Solutions
 
         // Practice Problem 4: Find the maximum element in an array
-        int[] array = {1, 2, 3, 4, 5};
+        int[] array = { 1, 2, 3, 4, 5 };
         int max = array[0];
         for (int num : array) {
             if (num > max) {
@@ -138,7 +163,7 @@ public class Examples2 {
         System.out.println("Contains only digits: " + isNumeric);
 
         // Practice Problem 6: Rotate an array to the right by k steps
-        int[] nums = {1, 2, 3, 4, 5};
+        int[] nums = { 1, 2, 3, 4, 5 };
         int k = 2;
         int n = nums.length;
         int[] rotated = new int[n];
@@ -152,7 +177,7 @@ public class Examples2 {
         System.out.println();
 
         // Practice Problem 11: Find the second largest element in an array
-        int[] array2 = {10, 20, 4, 45, 99};
+        int[] array2 = { 10, 20, 4, 45, 99 };
         int largest = Integer.MIN_VALUE, secondLargest = Integer.MIN_VALUE;
         for (int num : array2) {
             if (num > largest) {
@@ -164,7 +189,8 @@ public class Examples2 {
         }
         System.out.println("Second Largest Element: " + secondLargest);
 
-        // Practice Problem 12: Check if a string is a valid palindrome ignoring case and non-alphanumeric characters
+        // Practice Problem 12: Check if a string is a valid palindrome ignoring case
+        // and non-alphanumeric characters
         String palindromeCheck = "A man, a plan, a canal: Panama";
         String filtered = palindromeCheck.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
         boolean isValidPalindrome = true;
@@ -177,8 +203,8 @@ public class Examples2 {
         System.out.println("Is Valid Palindrome: " + isValidPalindrome);
 
         // Practice Problem 13: Find the intersection of two arrays
-        int[] arr1 = {1, 2, 2, 1};
-        int[] arr2 = {2, 2};
+        int[] arr1 = { 1, 2, 2, 1 };
+        int[] arr2 = { 2, 2 };
         List<Integer> intersection = new ArrayList<>();
         Map<Integer, Integer> countMap = new HashMap<>();
         for (int num : arr1) {

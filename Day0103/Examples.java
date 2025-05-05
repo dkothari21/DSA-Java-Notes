@@ -1,4 +1,4 @@
-package Day01;
+package Day0103;
 
 public class Examples {
     public static void main(String[] args) {
@@ -184,5 +184,27 @@ public class Examples {
             }
             System.out.println();
         }
+
+        // Tips and Tricks for DSA:
+        // 1. Always initialize arrays with proper size to avoid IndexOutOfBoundsException.
+        //    - Ensure you know the required size beforehand or use dynamic structures like ArrayList.
+        // 2. Use enhanced for-loops for better readability when iterating over arrays.
+        //    - Avoid modifying the array inside the loop to prevent unexpected behavior.
+        // 3. For multi-dimensional arrays, ensure consistent row sizes unless using jagged arrays.
+        //    - Validate the dimensions during initialization to avoid NullPointerException.
+        // 4. Use System.arraycopy for efficient array copying.
+        //    - Ensure source and destination arrays have compatible sizes to avoid ArrayIndexOutOfBoundsException.
+        // 5. Leverage java.util.Arrays for common operations like sorting and searching.
+        //    - Use Arrays.sort for sorting and Arrays.binarySearch for efficient searching in sorted arrays.
+        // 6. For large datasets, consider using data structures like ArrayList for dynamic sizing.
+        //    - Use ArrayList's add() method to dynamically grow the list as needed.
+        // 7. When working with matrices, ensure dimensions match for operations like multiplication.
+        //    - Validate the number of columns in the first matrix equals the number of rows in the second matrix.
+        // 8. Use modular arithmetic for circular array problems (e.g., rotations).
+        //    - Use (index + k) % n for right rotations and (index - k + n) % n for left rotations.
+        // 9. Optimize nested loops for better performance in multi-dimensional array operations.
+        //    - Minimize redundant calculations and use caching where possible.
+        // 10. Practice common patterns like sliding window and two-pointer techniques for subarray problems.
+        //     - Use a fixed-size window for sliding window problems and maintain two indices for two-pointer problems.
     }
 }
