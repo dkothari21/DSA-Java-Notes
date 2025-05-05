@@ -108,5 +108,81 @@ public class Examples {
         // 6. Searching in arrays
         int index = java.util.Arrays.binarySearch(singleDimArray, 20);
         System.out.println("Index of 20 in sorted array: " + index);
+
+        // Rotating an array to the right by k steps
+        int[] arrayToRotate = { 1, 2, 3, 4, 5 };
+        int k = 2; // Number of steps to rotate
+        int n = arrayToRotate.length;
+        int[] rotatedArray = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            rotatedArray[(i + k) % n] = arrayToRotate[i];
+        }
+
+        System.out.println("Rotated array:");
+        for (int num : rotatedArray) {
+            System.out.println(num);
+        }
+
+        // Finding the maximum in a subarray of size k
+        int[] subarrayExample = { 10, 5, 2, 7, 8, 7 };
+        int windowSize = 3;
+        System.out.println("Maximum in each subarray of size " + windowSize + ":");
+        for (int i = 0; i <= subarrayExample.length - windowSize; i++) {
+            int max = subarrayExample[i];
+            for (int j = 1; j < windowSize; j++) {
+                max = Math.max(max, subarrayExample[i + j]);
+            }
+            System.out.println(max);
+        }
+
+        // Matrix transposition
+        int[][] matrix = {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
+        };
+
+        int[][] transposedMatrix = new int[matrix[0].length][matrix.length];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                transposedMatrix[j][i] = matrix[i][j];
+            }
+        }
+
+        System.out.println("Transposed matrix:");
+        for (int[] row : transposedMatrix) {
+            for (int elem : row) {
+                System.out.print(elem + " ");
+            }
+            System.out.println();
+        }
+
+        // Matrix multiplication
+        int[][] matrixA = {
+                { 1, 2 },
+                { 3, 4 }
+        };
+        int[][] matrixB = {
+                { 5, 6 },
+                { 7, 8 }
+        };
+
+        int[][] resultMatrix = new int[matrixA.length][matrixB[0].length];
+        for (int i = 0; i < matrixA.length; i++) {
+            for (int j = 0; j < matrixB[0].length; j++) {
+                for (int l = 0; l < matrixB.length; l++) {
+                    resultMatrix[i][j] += matrixA[i][l] * matrixB[l][j];
+                }
+            }
+        }
+
+        System.out.println("Result of matrix multiplication:");
+        for (int[] row : resultMatrix) {
+            for (int elem : row) {
+                System.out.print(elem + " ");
+            }
+            System.out.println();
+        }
     }
 }
