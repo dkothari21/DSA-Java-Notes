@@ -13,11 +13,17 @@ public class Examples {
         singleDimArray[1] = 20; // Update second element
         System.out.println("Updated second element: " + singleDimArray[1]);
 
+        // Time Complexity: O(1) for accessing or updating an element.
+        // Space Complexity: O(n), where n is the size of the array.
+
         // Using for-each loop
         System.out.println("Array elements using for-each loop:");
         for (int num : singleDimArray) {
             System.out.println(num);
         }
+
+        // Time Complexity: O(n), where n is the size of the array.
+        // Space Complexity: O(1).
 
         // Working with multi-dimensional arrays
         int[][] multiDimArray = {
@@ -31,6 +37,9 @@ public class Examples {
         multiDimArray[1][1] = 50; // Update element at [1][1]
         System.out.println("Updated element at [1][1]: " + multiDimArray[1][1]);
 
+        // Time Complexity: O(1) for accessing an element in a multi-dimensional array.
+        // Space Complexity: O(m * n), where m is the number of rows and n is the number of columns.
+
         System.out.println("Multi-dimensional array elements:");
         for (int i = 0; i < multiDimArray.length; i++) {
             for (int j = 0; j < multiDimArray[i].length; j++) {
@@ -38,6 +47,9 @@ public class Examples {
             }
             System.out.println();
         }
+
+        // Time Complexity: O(m * n), where m is the number of rows and n is the number of columns.
+        // Space Complexity: O(1).
 
         System.out.println("Multi-dimensional array using for-each loop:");
         for (int[] row : multiDimArray) {
@@ -57,10 +69,16 @@ public class Examples {
             System.out.println(str);
         }
 
+        // Time Complexity: O(n), where n is the size of the array.
+        // Space Complexity: O(1).
+
         System.out.println("Double array elements:");
         for (double d : doubleArray) {
             System.out.println(d);
         }
+
+        // Time Complexity: O(n), where n is the size of the array.
+        // Space Complexity: O(1).
 
         // 2. Jagged arrays (arrays with rows of different lengths)
         int[][] jaggedArray = {
@@ -77,6 +95,9 @@ public class Examples {
             System.out.println();
         }
 
+        // Time Complexity: O(n), where n is the total number of elements in the jagged array.
+        // Space Complexity: O(1).
+
         // 3. Array of objects
         String[] names = new String[3];
         names[0] = "Alice";
@@ -88,6 +109,9 @@ public class Examples {
             System.out.println(name);
         }
 
+        // Time Complexity: O(n), where n is the size of the array.
+        // Space Complexity: O(1).
+
         // 4. Copying arrays
         int[] originalArray = { 10, 20, 30 };
         int[] copiedArray = new int[originalArray.length];
@@ -98,6 +122,9 @@ public class Examples {
             System.out.println(num);
         }
 
+        // Time Complexity: O(n), where n is the size of the array.
+        // Space Complexity: O(1).
+
         // 5. Sorting arrays
         java.util.Arrays.sort(singleDimArray);
         System.out.println("Sorted single-dimensional array:");
@@ -105,9 +132,15 @@ public class Examples {
             System.out.println(num);
         }
 
+        // Time Complexity: O(n log n) for sorting the array.
+        // Space Complexity: O(1).
+
         // 6. Searching in arrays
         int index = java.util.Arrays.binarySearch(singleDimArray, 20);
         System.out.println("Index of 20 in sorted array: " + index);
+
+        // Time Complexity: O(log n) for binary search in a sorted array.
+        // Space Complexity: O(1).
 
         // Rotating an array to the right by k steps
         int[] arrayToRotate = { 1, 2, 3, 4, 5 };
@@ -124,6 +157,9 @@ public class Examples {
             System.out.println(num);
         }
 
+        // Time Complexity: O(n) for rotating the array.
+        // Space Complexity: O(n) for the rotated array.
+
         // Finding the maximum in a subarray of size k
         int[] subarrayExample = { 10, 5, 2, 7, 8, 7 };
         int windowSize = 3;
@@ -135,6 +171,9 @@ public class Examples {
             }
             System.out.println(max);
         }
+
+        // Time Complexity: O(n * k), where n is the size of the array and k is the window size.
+        // Space Complexity: O(1).
 
         // Matrix transposition
         int[][] matrix = {
@@ -157,6 +196,9 @@ public class Examples {
             }
             System.out.println();
         }
+
+        // Time Complexity: O(m * n), where m and n are the dimensions of the matrix.
+        // Space Complexity: O(m * n) for the transposed matrix.
 
         // Matrix multiplication
         int[][] matrixA = {
@@ -184,6 +226,9 @@ public class Examples {
             }
             System.out.println();
         }
+
+        // Time Complexity: O(p * q * r), where p is the number of rows in matrixA, q is the number of columns in matrixA, and r is the number of columns in matrixB.
+        // Space Complexity: O(p * r) for the result matrix.
 
         // Tips and Tricks for DSA:
         // 1. Always initialize arrays with proper size to avoid IndexOutOfBoundsException.

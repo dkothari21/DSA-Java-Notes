@@ -11,10 +11,14 @@ public class Examples2 {
         // Declaration and Initialization
         String str1 = "Hello"; // Using string literal
         String str2 = new String("World"); // Using new keyword
+        // Time Complexity: O(1) for string declaration and initialization.
+        // Space Complexity: O(n), where n is the length of the string.
 
         // Concatenation
         String concatenated = str1 + " " + str2; // Using + operator
         System.out.println("Concatenated String: " + concatenated);
+        // Time Complexity: O(n) for concatenation, where n is the total length of the strings.
+        // Space Complexity: O(n), where n is the length of the concatenated string.
 
         // Practice Problem 1: Declare two strings and concatenate them with a space in
         // between.
@@ -24,19 +28,29 @@ public class Examples2 {
 
         // Length of the string
         System.out.println("Length: " + sample.length()); // Returns the number of characters
+        // Time Complexity: O(1) for length calculation.
+        // Space Complexity: O(1).
 
         // Substring
         System.out.println("Substring (0, 4): " + sample.substring(0, 4)); // Extracts "Data"
+        // Time Complexity: O(k) for substring extraction, where k is the length of the substring.
+        // Space Complexity: O(k) for the substring.
 
         // Equals
         System.out.println("Equals 'DataStructuresAndAlgorithms': " + sample.equals("DataStructuresAndAlgorithms")); // Compares
                                                                                                                      // content
+        // Time Complexity: O(n) for equals comparison, where n is the length of the string.
+        // Space Complexity: O(1).
 
         // Index of a character
         System.out.println("Index of 'A': " + sample.indexOf('A')); // Finds the first occurrence of 'A'
+        // Time Complexity: O(n) for indexOf, where n is the length of the string.
+        // Space Complexity: O(1).
 
         // Convert to lowercase
         System.out.println("Lowercase: " + sample.toLowerCase()); // Converts to lowercase
+        // Time Complexity: O(n) for toLowerCase, where n is the length of the string.
+        // Space Complexity: O(n) for the new string.
 
         // Practice Problem 2: Write a program to check if two strings are anagrams.
 
@@ -45,15 +59,21 @@ public class Examples2 {
         StringBuilder sb = new StringBuilder("Hello");
         sb.append(" World"); // Appends " World" to "Hello"
         System.out.println("StringBuilder: " + sb);
+        // Time Complexity: O(n) for appending to StringBuilder, where n is the length of the appended string.
+        // Space Complexity: O(n) for the StringBuilder.
 
         // Reverse a string using StringBuilder
         sb.reverse(); // Reverses the string
         System.out.println("Reversed StringBuilder: " + sb);
+        // Time Complexity: O(n) for reversing a StringBuilder, where n is the length of the string.
+        // Space Complexity: O(1).
 
         // StringBuffer Example
         StringBuffer sbf = new StringBuffer("DSA");
         sbf.append(" Notes"); // Appends " Notes" to "DSA"
         System.out.println("StringBuffer: " + sbf);
+        // Time Complexity: O(n) for appending to StringBuffer, where n is the length of the appended string.
+        // Space Complexity: O(n) for the StringBuffer.
 
         // Practice Problem 3: Reverse a string using StringBuilder or StringBuffer.
 
@@ -92,6 +112,8 @@ public class Examples2 {
         // Additional Examples for Patterns in DSA
 
         // Example 1: Count the frequency of characters in a string
+        // Time Complexity: O(n), where n is the length of the string.
+        // Space Complexity: O(1) for the frequency array (assuming fixed alphabet size).
         String freqSample = "datastructures";
         int[] freq = new int[26]; // Assuming only lowercase letters
         for (char c : freqSample.toCharArray()) {
@@ -105,6 +127,8 @@ public class Examples2 {
         }
 
         // Example 2: Check if a string is a palindrome
+        // Time Complexity: O(n), where n is the length of the string.
+        // Space Complexity: O(1).
         String palindromeSample = "madam";
         boolean isPalindrome = true;
         for (int i = 0, j = palindromeSample.length() - 1; i < j; i++, j--) {
@@ -116,6 +140,8 @@ public class Examples2 {
         System.out.println("Is Palindrome: " + isPalindrome);
 
         // Example 3: Find all substrings of a string
+        // Time Complexity: O(n^2), where n is the length of the string.
+        // Space Complexity: O(1).
         String substringSample = "abc";
         System.out.println("All Substrings:");
         for (int i = 0; i < substringSample.length(); i++) {
@@ -125,6 +151,8 @@ public class Examples2 {
         }
 
         // Example 4: Longest Common Prefix among an array of strings
+        // Time Complexity: O(n * m), where n is the number of strings and m is the length of the shortest string.
+        // Space Complexity: O(1).
         String[] words = { "flower", "flow", "flight" };
         String prefix = words[0];
         for (int i = 1; i < words.length; i++) {
@@ -137,6 +165,8 @@ public class Examples2 {
         System.out.println("Longest Common Prefix: " + prefix);
 
         // Example 5: Reverse words in a sentence
+        // Time Complexity: O(n), where n is the length of the sentence.
+        // Space Complexity: O(n) for the reversed sentence.
         String sentence = "Data Structures and Algorithms";
         String[] wordsArray = sentence.split(" ");
         StringBuilder reversedSentence = new StringBuilder();
