@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Examples2 {
+public class Day0406 {
     public static void main(String[] args) {
         // Section 1: String Basics
         // Declaration and Initialization
@@ -17,7 +17,8 @@ public class Examples2 {
         // Concatenation
         String concatenated = str1 + " " + str2; // Using + operator
         System.out.println("Concatenated String: " + concatenated);
-        // Time Complexity: O(n) for concatenation, where n is the total length of the strings.
+        // Time Complexity: O(n) for concatenation, where n is the total length of the
+        // strings.
         // Space Complexity: O(n), where n is the length of the concatenated string.
 
         // Practice Problem 1: Declare two strings and concatenate them with a space in
@@ -33,13 +34,15 @@ public class Examples2 {
 
         // Substring
         System.out.println("Substring (0, 4): " + sample.substring(0, 4)); // Extracts "Data"
-        // Time Complexity: O(k) for substring extraction, where k is the length of the substring.
+        // Time Complexity: O(k) for substring extraction, where k is the length of the
+        // substring.
         // Space Complexity: O(k) for the substring.
 
         // Equals
         System.out.println("Equals 'DataStructuresAndAlgorithms': " + sample.equals("DataStructuresAndAlgorithms")); // Compares
                                                                                                                      // content
-        // Time Complexity: O(n) for equals comparison, where n is the length of the string.
+        // Time Complexity: O(n) for equals comparison, where n is the length of the
+        // string.
         // Space Complexity: O(1).
 
         // Index of a character
@@ -59,61 +62,76 @@ public class Examples2 {
         StringBuilder sb = new StringBuilder("Hello");
         sb.append(" World"); // Appends " World" to "Hello"
         System.out.println("StringBuilder: " + sb);
-        // Time Complexity: O(n) for appending to StringBuilder, where n is the length of the appended string.
+        // Time Complexity: O(n) for appending to StringBuilder, where n is the length
+        // of the appended string.
         // Space Complexity: O(n) for the StringBuilder.
 
         // Reverse a string using StringBuilder
         sb.reverse(); // Reverses the string
         System.out.println("Reversed StringBuilder: " + sb);
-        // Time Complexity: O(n) for reversing a StringBuilder, where n is the length of the string.
+        // Time Complexity: O(n) for reversing a StringBuilder, where n is the length of
+        // the string.
         // Space Complexity: O(1).
 
         // StringBuffer Example
         StringBuffer sbf = new StringBuffer("DSA");
         sbf.append(" Notes"); // Appends " Notes" to "DSA"
         System.out.println("StringBuffer: " + sbf);
-        // Time Complexity: O(n) for appending to StringBuffer, where n is the length of the appended string.
+        // Time Complexity: O(n) for appending to StringBuffer, where n is the length of
+        // the appended string.
         // Space Complexity: O(n) for the StringBuffer.
 
         // Practice Problem 3: Reverse a string using StringBuilder or StringBuffer.
 
         // Tips and Tricks for DSA Problem Solving
-        // 1. Use StringBuilder for mutable strings to save memory and improve performance.
-        //    - Avoid using String concatenation in loops; use StringBuilder instead for better efficiency.
+        // 1. Use StringBuilder for mutable strings to save memory and improve
+        // performance.
+        // - Avoid using String concatenation in loops; use StringBuilder instead for
+        // better efficiency.
         // 2. Use .equals() for string comparison instead of ==.
-        //    - Always use .equalsIgnoreCase() for case-insensitive comparisons.
+        // - Always use .equalsIgnoreCase() for case-insensitive comparisons.
         // 3. Use substring and indexOf to parse strings efficiently.
-        //    - Validate indices to avoid StringIndexOutOfBoundsException.
+        // - Validate indices to avoid StringIndexOutOfBoundsException.
         // 4. Convert strings to char arrays for character-level manipulations.
-        //    - Use toCharArray() for easy iteration and modification of characters.
+        // - Use toCharArray() for easy iteration and modification of characters.
 
         // Tips and Tricks for DSA:
         // 1. Always analyze the time and space complexity of your solution.
-        //    - Use Big-O notation to estimate the efficiency of your algorithm.
-        // 2. Use HashMaps or HashSets for quick lookups in problems involving duplicates or frequency counts.
-        //    - Ensure proper handling of null keys and values in HashMaps.
-        // 3. Practice sliding window and two-pointer techniques for array and string problems.
-        //    - Use a dynamic window size for problems involving variable-length subarrays.
-        // 4. Divide and conquer is a powerful approach for sorting and searching problems.
-        //    - Break the problem into smaller sub-problems and combine their solutions.
-        // 5. Use dynamic programming for problems with overlapping subproblems and optimal substructure.
-        //    - Use a memoization table to store intermediate results and avoid recomputation.
+        // - Use Big-O notation to estimate the efficiency of your algorithm.
+        // 2. Use HashMaps or HashSets for quick lookups in problems involving
+        // duplicates or frequency counts.
+        // - Ensure proper handling of null keys and values in HashMaps.
+        // 3. Practice sliding window and two-pointer techniques for array and string
+        // problems.
+        // - Use a dynamic window size for problems involving variable-length subarrays.
+        // 4. Divide and conquer is a powerful approach for sorting and searching
+        // problems.
+        // - Break the problem into smaller sub-problems and combine their solutions.
+        // 5. Use dynamic programming for problems with overlapping subproblems and
+        // optimal substructure.
+        // - Use a memoization table to store intermediate results and avoid
+        // recomputation.
         // 6. Always dry-run your code with edge cases to ensure correctness.
-        //    - Test with empty inputs, single elements, and maximum constraints.
-        // 7. Use recursion with memoization to optimize solutions for problems with repeated calculations.
-        //    - Avoid stack overflow by limiting recursion depth or using iterative solutions.
-        // 8. Break down complex problems into smaller sub-problems and solve them step by step.
-        //    - Use helper functions to modularize and simplify your code.
-        // 9. Use binary search for problems involving sorted arrays or monotonic functions.
-        //    - Ensure the array is sorted and handle edge cases like duplicates.
+        // - Test with empty inputs, single elements, and maximum constraints.
+        // 7. Use recursion with memoization to optimize solutions for problems with
+        // repeated calculations.
+        // - Avoid stack overflow by limiting recursion depth or using iterative
+        // solutions.
+        // 8. Break down complex problems into smaller sub-problems and solve them step
+        // by step.
+        // - Use helper functions to modularize and simplify your code.
+        // 9. Use binary search for problems involving sorted arrays or monotonic
+        // functions.
+        // - Ensure the array is sorted and handle edge cases like duplicates.
         // 10. Practice writing clean and modular code to make debugging easier.
-        //     - Use meaningful variable names and add comments to explain logic.
+        // - Use meaningful variable names and add comments to explain logic.
 
         // Additional Examples for Patterns in DSA
 
         // Example 1: Count the frequency of characters in a string
         // Time Complexity: O(n), where n is the length of the string.
-        // Space Complexity: O(1) for the frequency array (assuming fixed alphabet size).
+        // Space Complexity: O(1) for the frequency array (assuming fixed alphabet
+        // size).
         String freqSample = "datastructures";
         int[] freq = new int[26]; // Assuming only lowercase letters
         for (char c : freqSample.toCharArray()) {
@@ -151,7 +169,8 @@ public class Examples2 {
         }
 
         // Example 4: Longest Common Prefix among an array of strings
-        // Time Complexity: O(n * m), where n is the number of strings and m is the length of the shortest string.
+        // Time Complexity: O(n * m), where n is the number of strings and m is the
+        // length of the shortest string.
         // Space Complexity: O(1).
         String[] words = { "flower", "flow", "flight" };
         String prefix = words[0];

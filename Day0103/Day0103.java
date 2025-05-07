@@ -1,6 +1,6 @@
 package Day0103;
 
-public class Examples {
+public class Day0103 {
     public static void main(String[] args) {
         // Introduction to arrays: declaration and initialization
         // Single-dimensional array
@@ -38,7 +38,8 @@ public class Examples {
         System.out.println("Updated element at [1][1]: " + multiDimArray[1][1]);
 
         // Time Complexity: O(1) for accessing an element in a multi-dimensional array.
-        // Space Complexity: O(m * n), where m is the number of rows and n is the number of columns.
+        // Space Complexity: O(m * n), where m is the number of rows and n is the number
+        // of columns.
 
         System.out.println("Multi-dimensional array elements:");
         for (int i = 0; i < multiDimArray.length; i++) {
@@ -48,7 +49,8 @@ public class Examples {
             System.out.println();
         }
 
-        // Time Complexity: O(m * n), where m is the number of rows and n is the number of columns.
+        // Time Complexity: O(m * n), where m is the number of rows and n is the number
+        // of columns.
         // Space Complexity: O(1).
 
         System.out.println("Multi-dimensional array using for-each loop:");
@@ -95,7 +97,8 @@ public class Examples {
             System.out.println();
         }
 
-        // Time Complexity: O(n), where n is the total number of elements in the jagged array.
+        // Time Complexity: O(n), where n is the total number of elements in the jagged
+        // array.
         // Space Complexity: O(1).
 
         // 3. Array of objects
@@ -172,7 +175,8 @@ public class Examples {
             System.out.println(max);
         }
 
-        // Time Complexity: O(n * k), where n is the size of the array and k is the window size.
+        // Time Complexity: O(n * k), where n is the size of the array and k is the
+        // window size.
         // Space Complexity: O(1).
 
         // Matrix transposition
@@ -227,29 +231,44 @@ public class Examples {
             System.out.println();
         }
 
-        // Time Complexity: O(p * q * r), where p is the number of rows in matrixA, q is the number of columns in matrixA, and r is the number of columns in matrixB.
+        // Time Complexity: O(p * q * r), where p is the number of rows in matrixA, q is
+        // the number of columns in matrixA, and r is the number of columns in matrixB.
         // Space Complexity: O(p * r) for the result matrix.
 
         // Tips and Tricks for DSA:
-        // 1. Always initialize arrays with proper size to avoid IndexOutOfBoundsException.
-        //    - Ensure you know the required size beforehand or use dynamic structures like ArrayList.
+        // 1. Always initialize arrays with proper size to avoid
+        // IndexOutOfBoundsException.
+        // - Ensure you know the required size beforehand or use dynamic structures like
+        // ArrayList.
         // 2. Use enhanced for-loops for better readability when iterating over arrays.
-        //    - Avoid modifying the array inside the loop to prevent unexpected behavior.
-        // 3. For multi-dimensional arrays, ensure consistent row sizes unless using jagged arrays.
-        //    - Validate the dimensions during initialization to avoid NullPointerException.
+        // - Avoid modifying the array inside the loop to prevent unexpected behavior.
+        // 3. For multi-dimensional arrays, ensure consistent row sizes unless using
+        // jagged arrays.
+        // - Validate the dimensions during initialization to avoid
+        // NullPointerException.
         // 4. Use System.arraycopy for efficient array copying.
-        //    - Ensure source and destination arrays have compatible sizes to avoid ArrayIndexOutOfBoundsException.
-        // 5. Leverage java.util.Arrays for common operations like sorting and searching.
-        //    - Use Arrays.sort for sorting and Arrays.binarySearch for efficient searching in sorted arrays.
-        // 6. For large datasets, consider using data structures like ArrayList for dynamic sizing.
-        //    - Use ArrayList's add() method to dynamically grow the list as needed.
-        // 7. When working with matrices, ensure dimensions match for operations like multiplication.
-        //    - Validate the number of columns in the first matrix equals the number of rows in the second matrix.
+        // - Ensure source and destination arrays have compatible sizes to avoid
+        // ArrayIndexOutOfBoundsException.
+        // 5. Leverage java.util.Arrays for common operations like sorting and
+        // searching.
+        // - Use Arrays.sort for sorting and Arrays.binarySearch for efficient searching
+        // in sorted arrays.
+        // 6. For large datasets, consider using data structures like ArrayList for
+        // dynamic sizing.
+        // - Use ArrayList's add() method to dynamically grow the list as needed.
+        // 7. When working with matrices, ensure dimensions match for operations like
+        // multiplication.
+        // - Validate the number of columns in the first matrix equals the number of
+        // rows in the second matrix.
         // 8. Use modular arithmetic for circular array problems (e.g., rotations).
-        //    - Use (index + k) % n for right rotations and (index - k + n) % n for left rotations.
-        // 9. Optimize nested loops for better performance in multi-dimensional array operations.
-        //    - Minimize redundant calculations and use caching where possible.
-        // 10. Practice common patterns like sliding window and two-pointer techniques for subarray problems.
-        //     - Use a fixed-size window for sliding window problems and maintain two indices for two-pointer problems.
+        // - Use (index + k) % n for right rotations and (index - k + n) % n for left
+        // rotations.
+        // 9. Optimize nested loops for better performance in multi-dimensional array
+        // operations.
+        // - Minimize redundant calculations and use caching where possible.
+        // 10. Practice common patterns like sliding window and two-pointer techniques
+        // for subarray problems.
+        // - Use a fixed-size window for sliding window problems and maintain two
+        // indices for two-pointer problems.
     }
 }
